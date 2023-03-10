@@ -18,7 +18,7 @@
         <img src="Images/logo-large.png" alt="logo" class="logo_large">
         <div class="buttons">
             <button onclick="document.location='login.html'" class="logIn">Log in</button>
-            <button onclick="document.location='signup.html'" class="signUp">Sign up</button>
+            <button onclick="document.getElementById('signUpPage').scrollIntoView();" class="signUp">Sign up</button>
         </div>
         <div class="credits">Photo by <a
                 href="https://unsplash.com/pt-br/@lois184?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louis
@@ -26,5 +26,34 @@
                 href="https://unsplash.com/photos/HGYLv5hjQQY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </div>
     </div>
-    <div class="signUpPage"></div>
+    <div class="signUpPage" id="signUpPage">
+        <div class="logoArea">
+            <img src="/Images/logo-small.png" alt="Logo" class="logo_small">
+            <h1 class="welcome">Sign up now for a free bike muahaha</h1>
+        </div>
+        <form class="signUpForm">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="contact">Phone Number</label>
+            <input type="number" id="contact" name="contact">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="cfmPassword">Confirm Password</label>
+            <input type="password" id="cfmPassword" name="cfmPassword">
+
+            <button type="submit">Create Account</button>
+
+            <p class="logInRedirect">Already have an account? <a onclick="document.location='login.html'">Log in</a></p>
+        </form>
+
+    </div>
 </body>
